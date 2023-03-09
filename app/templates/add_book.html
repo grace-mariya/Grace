@@ -1,0 +1,87 @@
+
+<html>
+    <head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+          <style>       
+          .header{
+      background-color: thistle;
+      padding: 20px;
+      text-align : center;
+            }
+     
+      nav ul li{
+          display: inline-block;
+          list-style: none;
+          padding: 20px;
+          text-align : center;
+      }
+      nav ul li a{
+          text-decoration: none;
+          color:black;
+          font-weight: bold;
+      }
+      nav ul li a:hover{
+          color:red;
+      }
+      span{
+          color: crimson;
+          
+          text-align : center;
+          
+      }
+      h1{
+         padding: 20px;
+      }
+      h3{
+        padding: 20px;
+      }
+      h2{
+        padding: 20px;
+      }
+      p{
+        padding: 20px;
+      }
+      img{
+        padding: 60px 80px ;
+        align : right;
+      }
+      
+
+
+          </style>  
+          <title>Library Management System - Add Book</title>
+          </head>
+          <body>
+            <div class="home">
+              <i class="glyphicon glyphicon-home">
+                  <button onclick="window.location.href='/index'">Home</button>
+                  
+              </i>
+                
+              </button>
+               </div>
+            <div class="header">
+            <h2><b><u>Add Book</u></b></h2></div>
+            <form
+                    method="post" action="{{ url_for('add_book') }}">
+                    <p><b>Title:</b><br>
+                    
+                    <input type="text" name="title"><br>
+                    <p><b>Author:</b><br>
+                    <input type="text" name="author"><br>
+                    <p><b>Year:</b><br>
+                    <input type="text" name="year"><br>
+                    <p><b>Publisher:</b><br>
+                    <input type="text" name="publisher"><br>
+                   
+                    <input type="submit" value="Add Book">
+                   
+           </form>
+          </button>
+           <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpOxfS-SFTVaUiOln51pUBA5MaaOREAs7vTQ&usqp=CAU"
+           align =  " right"
+           width=" 600">
+           
+             
+             </body>
+             </html>

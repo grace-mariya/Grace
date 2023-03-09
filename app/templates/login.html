@@ -1,0 +1,63 @@
+<html>
+    <head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+          <style>       
+          .header{
+      background-color: thistle;
+      padding: 20px;
+      text-align : center;
+            }
+      img{
+          padding:50px  50px;
+          
+
+      }
+      .login-form{
+        padding: 20px  20px;
+
+      }
+      .hii{
+        padding: 20px 20px;
+      }
+      form{
+        padding: 20px;
+      }
+      
+      .button {
+        background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+h2{
+  padding: 20px;
+}
+            
+          </style>  
+          </head>
+          <body>
+          <img src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ptVUJ-QbV1FYpkSBMXR94BKnWgpqsLZ7nA&usqp=CAU
+          align="right"
+          width ="800px">
+            <div class="header">
+            <h1><b><u>LIBRARY MANAGEMENT</u></b></h1></div>
+           <h2><b>Login </b><br></h2>
+           <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+          
+              <div class="login-form"><br>
+                <div class="hii"><br>
+                  <form class="login-form" method="POST" action="{{ url_for('login') }}">
+                    <input type="text" name="email" placeholder="email"/><br>
+                    <input type="password" name="password" placeholder="password"/><br>
+                    <button class = "button"> Login</button>
+                </form>
+           </body>
+    
+    </html>
+   

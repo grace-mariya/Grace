@@ -1,0 +1,80 @@
+<html>
+    <head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+          <style>       
+          .header{
+      background-color: thistle;
+      padding: 20px;
+      text-align : center;
+            }
+     
+      nav ul li{
+          display: inline-block;
+          list-style: none;
+          padding: 20px;
+          text-align : center;
+      }
+      nav ul li a{
+          text-decoration: none;
+          color:black;
+          font-weight: bold;
+      }
+      nav ul li a:hover{
+          color:red;
+      }
+      span{
+          color: crimson;
+          
+          text-align : center;
+          
+      }
+      h1{
+         padding: 20px;
+      }
+      h3{
+        padding: 20px;
+      }
+      h2{
+        padding: 20px;
+      }
+      p{
+        padding: 20px;
+      }
+      
+
+
+          </style>  
+          </head>
+          <body>
+            <div class="home">
+              
+              <i class="glyphicon glyphicon-home">
+                <button onclick="window.location.href='/index'">Home</button>
+                  
+              </i>
+                
+              </button>
+               </div>
+               <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd56o60AJbV1fljc7KYCvX_P0nNfL0td24tw&usqp=CAU"
+               aligh = "right"
+               width ="800px">
+            <div class="header">
+            <h2><b><u>Update:</u></b></h2></div>
+            <form method="post" action="{{ url_for('edit_book', book_id=book['_id']) }}">
+                <p><b> Title :</b><br>
+                
+                <input type="text" name="title" value="{{ book['title'] }}"><br>
+                <p><b> Author :</b><br>
+                <input type="text" name="author" value="{{ book['author'] }}"><br>
+                <p><b> Year :</b><br>
+                <input type="text" name="year" value="{{ book['year'] }}"><br>
+                <p><b> Publisher :</b><br>
+                <input type="text" name="publisher" value="{{ book['publisher'] }}"><br>
+                <input type="submit" value="Save Changes">
+
+    
+              
+           </form>
+           
+             </body>
+             </html>
